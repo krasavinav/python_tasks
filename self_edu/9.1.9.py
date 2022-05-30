@@ -7,7 +7,7 @@ P.S. Значения функции вычислять командой:
 
 f(x) = 0.5 * pow(x, 2) - 2.0
 """
-
+#112
 a, b = [int(i) for i in input().split()]
 gen = (0.5 * pow(x / 100, 2) - 2.0 for x in range(a * 100, b * 100 + 1))
 for i in range(20):
