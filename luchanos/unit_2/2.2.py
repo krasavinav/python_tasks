@@ -7,15 +7,17 @@
  экран. Что наблюдаете?
 4. Осуществите вызов функции суммирования из полученной переменной
 """
+
 counter = 0
 
-
+#1
 def sqrt(num):
     global counter
     counter += 1
     return num ** (1 / 2)
 
 
+#2
 def wrapper():
     def sum_(a, b):
         global counter
@@ -25,8 +27,9 @@ def wrapper():
 
     return sum_
 
-
+#3
 res = wrapper()
+#4
 print(res(1, 4))
 print(res(1, 4))
 print(res(1, 4))

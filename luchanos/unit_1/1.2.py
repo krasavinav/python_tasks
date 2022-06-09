@@ -22,10 +22,10 @@ def sum_func2(a, b, c, d, *args):
     return a + b + c + d + sum(args)
 
 
-# print(sum_func2(1)) #ошибка, не достает еще 3х аргументов
+#print(sum_func2(1)) #ошибка, не достает еще 3х аргументов
 #print(sum_func2(1, 2, 3, 4, d=5)) #несколько значение для одного аргумента
 tup = 1, 2, 3, 4, 5, 6
 print('распакуем кортеж и найдем сумму значений', sum_func2(*tup))
 d = dict(a=1, b=22, c=10, d=14)
-#print(sum_func2(*d))
+#print(sum_func2(*d)) #словарь нельзя так распаковать
 print(sum_func2(**d))
