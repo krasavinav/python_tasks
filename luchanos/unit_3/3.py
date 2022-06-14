@@ -5,13 +5,20 @@
 очистки кэша в процессе выполнения функций.
 3.3 Параметризовать время кэширования в декораторе.
 """
-from functools import lru_cache
+cache = dict()
 
-@lru_cache()
+
+def dec(f):
+    def wrapper(*args, **kwargs):
+
+
+
+    return wrapper
+
+
 def sum_(a, b):
     return a + b
 
 
 
 print(sum_(3, 4))
-print(sum_.cache_info())

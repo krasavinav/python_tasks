@@ -14,12 +14,12 @@ def dec__(trynumber):
             for i in range(trynumber):
                 try:
                     res = f(*args, **kwargs)
-                except:
+                except Exception as ex:
                     if i != trynumber - 1:
                         print('Что-то пошло не так...')
-                        continue
                     else:
-                        print('исключение')
+                        print(ex)
+                        break
                 else:
                     return res
 
@@ -33,4 +33,4 @@ def div_(a, b):
     return a / b
 
 
-print(div_(4, 0))
+div_(4, 'as')
